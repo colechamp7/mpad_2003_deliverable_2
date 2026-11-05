@@ -8,7 +8,7 @@
 Use one hashtag symbol (`#`) to create a level 1 heading like this one.
 
 ## Foreword
-
+Deliverable 1 questioned the possibility that money is what explains who lives near Ottawa’s free ice. Taking a closer look, I noticed it mostly doesn't. The ward with the highest median income surprisingly had the worst access in the city, the opposite of the story I was trying to tell. However, this story will only hold up if its data does as well. So I went back and looked at Ottawa's outdoor rink inventory, aware that before I draw any more from that file I need to know what it actually supports. 
 
 
 ## 1. Getting Data
