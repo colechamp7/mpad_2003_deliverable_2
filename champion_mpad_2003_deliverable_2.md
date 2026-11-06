@@ -5,7 +5,7 @@
 
 # Deliverable 2: Exploratory Data Analysis (EDA)
 
-Use one hashtag symbol (`#`) to create a level 1 heading like this one.
+
 
 ## Foreword
 Deliverable 1 questioned the possibility that money is what explains who lives near Ottawa’s free ice. Taking a closer look, I noticed it mostly doesn't. The ward with the highest median income surprisingly had the worst access in the city, the opposite of the story I was trying to tell. However, this story will only hold up if its data does as well. So I went back and looked at Ottawa's outdoor rink inventory, aware that before I draw any more from that file I need to know what it actually supports. 
@@ -13,23 +13,21 @@ Deliverable 1 questioned the possibility that money is what explains who lives n
 
 ## 1. Getting Data
 
-Use two hashtag symbols (`##`) to create a level 2 heading like this one.
+![](outdoor-rinks-sheets.png)<br>
 
-To include a screen capture, use the sample code below. Your images should be saved in the same folder as your `.md` file.
+The dataset I used is the City Of Ottawa’s Outdoor rink layer, downloaded as a CSV from Open Ottawa, which fronts the Parks Inventory map service (https://maps.ottawa.ca/arcgis/rest/services/Parks_Inventory/MapServer/13)
+In the Deliverable 1, I pulled from that service directly due to the CSV being locked behind a sign-in that I lacked at the time. I proceeded to import the file into a blank Google Sheet via File -> Import -> Upload, comma-separated, “Replace spreadsheet,” and then froze the header row.
 
-![](import-screen-capture.png)<br>
-*Figure 1: The "Import file" prompt on Google Sheets.*
+### Public Sheet Link
+[Ottawa Rink Dataset](https://docs.google.com/spreadsheets/d/1DNuw5EDWt_dg02KeKDsTmrjvEAQHALMLfkTT4MckVsk/edit?usp=sharing)
 
-**Here are examples of functions and lines of code put in grey boxes:**
+In Deliverable 1, I reported 288 records across 41 fields. The pull I took November 3, 2026, has 269 rows and 42 columns. This leads me to think that the other 19 rinks have been edited or removed since. This considered, results may also be different due to just downloading the CSV instead of actually reading through the map service. From here on, every number from here uses this copy. On first glance, the data looks clean, though LINK_DESCRIPTION is empty and 88% of rinks are missing CREATED_DATE. 
 
-1. If you name a function, put it between "angled" quotation marks like this: `IMPORTHTML`.
-1. If you want to include the entire line of code, do the same thing, albeit with your entire code: `=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)`.
-1. Alternatively, you can put your code in an independent box using the template below:
+`BOARDS` and `ACCESSIBLE` are nominal variables, meaning labels with no order to them. Each variable has yes/oui or no/non as the two possible answers. `LIGHTS_TYPE`, also nominal, has three possible answers consisting of Permanent, Seasonal, or nothing at all. I'll be able to sort through and compare `MODIFIED_DATE` as it's a real date variable. `CREATED_DATE` would be the same but it's typed inconsistently, meaning the spreadsheet reads it as plain text.  
 
-``` r
-=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)
-```
-This also shows how to create an ordered list. Simply put `1.` before each item.
+`MODIFIED_DATE` raises my main question. It's important to know that of the 269 rinks it holds, 145 have not been touched since 2019, and no records in the file have been updated since November 2024. Considering the seven year age of over half these entries, it makes me wonder if I may be describing these rinks as they were before the Covid-19 Pandemic, and not how they will be this upcoming winter season.
+
+Previously mentioned as well, I expected income to predict one's access to rinks. I found in my first deliverable that it barely does, r = 0.15.
 
 ## 2. Understanding Data
 
