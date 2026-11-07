@@ -21,7 +21,7 @@ In the Deliverable 1, I pulled from that service directly due to the CSV being l
 ### Public Sheet Link
 [Ottawa Rink Dataset](https://docs.google.com/spreadsheets/d/1DNuw5EDWt_dg02KeKDsTmrjvEAQHALMLfkTT4MckVsk/edit?usp=sharing)
 
-In Deliverable 1, I reported 288 records across 41 fields. The pull I took November 3, 2026, has 269 rows and 42 columns. This leads me to think that the other 19 rinks have been edited or removed since. This considered, results may also be different due to just downloading the CSV instead of actually reading through the map service. From here on, every number from here uses this copy. On first glance, the data looks clean, though LINK_DESCRIPTION is empty and 88% of rinks are missing CREATED_DATE. 
+In Deliverable 1, I reported 288 records across 41 fields. The pull I took November 3, 2026, has 269 rows and 42 columns. This leads me to think that the other 19 rinks have been edited or removed since. This considered, results may also be different due to just downloading the CSV instead of actually reading through the map service. From here on, every number from here uses this copy. On first glance, the data looks clean, though `LINK_DESCRIPTION` is empty and 88% of rinks are missing `CREATED_DATE`. 
 
 `BOARDS` and `ACCESSIBLE` are nominal variables, meaning labels with no order to them. Each variable has yes/oui or no/non as the two possible answers. `LIGHTS_TYPE`, also nominal, has three possible answers consisting of Permanent, Seasonal, or nothing at all. I'll be able to sort through and compare `MODIFIED_DATE` as it's a real date variable. `CREATED_DATE` would be the same but it's typed inconsistently, meaning the spreadsheet reads it as plain text.  
 
