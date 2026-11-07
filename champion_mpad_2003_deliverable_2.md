@@ -79,7 +79,7 @@ In my pivot table, I weighed `LIGHTS_TYPE` against `BOARDS`, counting rinks with
 #### Pivot Table of lights by boards
 ![](pivot-table.png)<br>
 Figure 1.  This Pivot table shows the count of Ottawa outdoor rinks by lighting type and presence of boards.
-#### Ottawa outdoor rinks by lighting and boards
+#### Exploratory chart of Ottawa outdoor rinks by lighting and boards
 ![](Ottawa-outdoor-rinks-by-lighting-and-boards.png)<br>
 Figure 2. Exploratory chart showing Ottawa's outdoor rinks by lighting type, split by whether the rink has boards.
 
@@ -92,7 +92,14 @@ Out of 269, 128 rinks have both. This chart shows that the two travel together; 
 
 ## 3. Delivering Data
 
-Insert text here.
+
+My story is no longer about one's income. It is about who's willing to keep a rink open. This file lists the rinks that exist, not the ones that ever froze, and that gap is where the reporting starts.
+
+Closing it will need three things. First, a record of which rinks actually opened last winter and the duration of which they stayed open; the City publishes locations but not days of operation. Second, the 26 empty `ICE_MAINTENANCE` cells need to be filled in because I can't make the argument that volunteers in the community carry the network while a tenth of the records say nothing. Third, the Ward income matched to each rink, which I have from the City’s 2021 census tables but have not yet joined. 
+
+The people I plan to interview are the volunteers themselves. The rink coordinator in a lower-income ward would tell me what the 215 figure feels like in practice, and a City recreation supervisor could explain the selection of the 28 city-run rinks. 
+
+For some added context, I found  [CBC’s 2023 report](https://www.cbc.ca/lite/story/1.6765796) on Ottawa organizers losing volunteers after experiencing a shortened skating season, and the [2017 Outdoor Rink Manual](https://ourchara.ca/wp-content/uploads/2017-Outdoor-Rink-Manual-1.pdf), which shows the expectations the City has for its volunteer groups. 
 
 ## 4. References
 
