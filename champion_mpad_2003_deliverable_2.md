@@ -53,7 +53,7 @@ Outliers. In a statistical sense, nominal columns like the ones in my dataset ca
 
 #### Trim whitespace.
 
- Data-> Data cleanup -> Trim whitespace; ended up reporting three trimmed cells in `ADRESS` (row 108), `PARKNAME` (row 52), and `SUPERVISED_HOURS` (row 154). An address showed `469 Donald `, with a noticeable space at the end. If left alone, `Eugène Martineau Park ` would have counted as a completely different park from `Eugène Martineau Park`. 
+ Data-> Data cleanup -> Trim whitespace; ended up reporting three trimmed cells in `ADDRESS` (row 108), `PARKNAME` (row 52), and `SUPERVISED_HOURS` (row 154). An address showed `469 Donald `, with a noticeable space at the end. If left alone, `Eugène Martineau Park ` would have counted as a completely different park from `Eugène Martineau Park`. 
 
 #### Find and Replace.
 
@@ -73,17 +73,22 @@ Must clarify as well that `RINK_ID` is mine rather than the City’s and `FACILI
 
 ### 2.3. Analyzing Data
 
-Insert text here.
 
-**This section should include a screen capture of your pivot table, like so:**
+In my pivot table, I weighed `LIGHTS_TYPE` against `BOARDS`, counting rinks with COUNTA on `NAME`. These variables working together decide whether a rink can be playable after the sun sets. 
 
-![](pivot-table-screen-capture.png)<br>
-*Figure 2: This pivot table shows...*
+#### Pivot Table of lights by boards
+![](pivot-table.png)<br>
+Figure 1.  This Pivot table shows the count of Ottawa outdoor rinks by lighting type and presence of boards.
+#### Ottawa outdoor rinks by lighting and boards
+![](Ottawa-outdoor-rinks-by-lighting-and-boards.png)<br>
+Figure 2. Exploratory chart showing Ottawa's outdoor rinks by lighting type, split by whether the rink has boards.
 
-**This section should also include a screen capture of your exploratory chart, like so:**
+Out of 269, 128 rinks have both. This chart shows that the two travel together; 47 of 59 nonlit rinks also don't have boards, meaning that rinks tend to be equipped or not at all. 
 
-![](chart-screen-capture.png)<br>
-*Figure 3: This exploratory chart shows...*
+`ICE_MAINTENANCE` matters most. 215 of 269 rinks are volunteer-run; access may depend on who floods the ice rather than income. The next step is crossing that column against ward income.  
+
+
+
 
 ## 3. Delivering Data
 
